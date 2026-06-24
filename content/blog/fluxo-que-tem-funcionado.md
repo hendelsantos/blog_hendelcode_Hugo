@@ -3,7 +3,6 @@ title = "Vibe coding: o fluxo que tem funcionado pra mim"
 date = 2026-06-24
 draft = false
 tags = ["vibe-coding", "ia", "llm", "agentes"]
-categories = ["Vibe Coding"]
 weight = 2
 +++
 

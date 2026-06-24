@@ -71,47 +71,27 @@ relativeURLs = false
     pageRef = "/blog"
     weight = 2
   [[menu.main]]
-    identifier = "stacks"
-    name = "Stacks"
-    pageRef = "/stacks"
-    weight = 3
-  [[menu.main]]
-    identifier = "vibe-coding"
-    name = "Vibe Coding"
-    pageRef = "/vibe-coding"
-    weight = 4
-  [[menu.main]]
-    identifier = "dados"
-    name = "Análise de Dados"
-    pageRef = "/dados"
-    weight = 5
-  [[menu.main]]
-    identifier = "aprendizado"
-    name = "Aprendizado"
-    pageRef = "/aprendizado"
-    weight = 6
-  [[menu.main]]
     identifier = "sobre"
     name = "Sobre"
     pageRef = "/sobre"
-    weight = 7
+    weight = 3
   [[menu.main]]
     identifier = "arquivo"
     name = "Arquivo"
     pageRef = "/arquivo"
-    weight = 8
+    weight = 4
   [[menu.main]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/hendelsantos"
-    weight = 9
+    weight = 5
     [menu.main.params]
       type = "link"
       icon = "github"
   [[menu.main]]
     identifier = "search"
     name = "Buscar"
-    weight = 10
+    weight = 6
     [menu.main.params]
       type = "search"
 

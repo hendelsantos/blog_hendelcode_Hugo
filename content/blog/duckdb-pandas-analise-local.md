@@ -3,7 +3,6 @@ title = "DuckDB + pandas: analyze local sem servidor"
 date = 2026-06-24
 draft = false
 tags = ["dados", "duckdb", "pandas", "python"]
-categories = ["Análise de Dados"]
 weight = 3
 +++
 
@@ -51,4 +50,4 @@ O DuckDB lê o CSV por trás, faz o GROUP BY em streaming, e te devolve só o re
 
 DuckDB virou peça fixa do meu toolkit de dados. Não substitui pandas — **complementa**. CSV grande? DuckDB. Transformação relacional? DuckDB. Manipulação livre e exploratória? pandas.
 
-Nos próximos posts da seção [dados](/dados) entro em ETL, visualização e pegadinhas de modelagem que aparecem no caminho.
+Nos próximos posts entro em ETL, visualização e pegadinhas de modelagem que aparecem no caminho.

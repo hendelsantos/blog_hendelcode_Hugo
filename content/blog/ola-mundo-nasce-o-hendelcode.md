@@ -3,7 +3,6 @@ title = "Olá mundo: nasce o HendelCode"
 date = 2026-06-24
 draft = false
 tags = ["meta", "hugo", "github-pages"]
-categories = ["Blog"]
 weight = 1
 +++
 
