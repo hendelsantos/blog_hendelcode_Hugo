@@ -1,0 +1,205 @@
+# HendelCode - Blog técnico de programação, vibe coding e análise de dados
+# Tema: Hextra (mesmo do akitaonrails.com) | Deploy: GitHub Pages
+
+baseURL = "https://hendelsantos.github.io/blog_hendelcode_Hugo/"
+defaultContentLanguage = "pt-br"
+title = "HendelCode"
+enableRobotsTXT = true
+enableGitInfo = true
+enableInlineShortcodes = true
+
+# Necessário para GitHub Pages com subpath (repo não é usuario.github.io)
+canonifyURLs = true
+relativeURLs = false
+
+# Outputs: RSS + formato markdown/llms (igual Hextra)
+[outputs]
+  home = ["html", "rss", "llms"]
+  page = ["html", "markdown"]
+  section = ["html", "rss", "markdown"]
+
+[outputFormats.llms]
+  name = "llms"
+  baseName = "llms"
+  mediaType = "text/plain"
+  isPlainText = true
+
+[outputFormats.markdown]
+  name = "markdown"
+  baseName = "index"
+  mediaType = "text/markdown"
+  isPlainText = true
+  ugly = true
+
+[languages]
+  [languages.pt-br]
+    label = "Português"
+    weight = 1
+    title = "HendelCode"
+
+# Tema Hextra via Hugo Module (necessário para layouts _shortcodes/_partials no Hugo 0.146+)
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\\[', '\\]'], ['$$', '$$']]
+          inline = [['\\(', '\\)']]
+
+# Menu principal
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Início"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 2
+  [[menu.main]]
+    identifier = "stacks"
+    name = "Stacks"
+    pageRef = "/stacks"
+    weight = 3
+  [[menu.main]]
+    identifier = "vibe-coding"
+    name = "Vibe Coding"
+    pageRef = "/vibe-coding"
+    weight = 4
+  [[menu.main]]
+    identifier = "dados"
+    name = "Análise de Dados"
+    pageRef = "/dados"
+    weight = 5
+  [[menu.main]]
+    identifier = "aprendizado"
+    name = "Aprendizado"
+    pageRef = "/aprendizado"
+    weight = 6
+  [[menu.main]]
+    identifier = "sobre"
+    name = "Sobre"
+    pageRef = "/sobre"
+    weight = 7
+  [[menu.main]]
+    identifier = "arquivo"
+    name = "Arquivo"
+    pageRef = "/arquivo"
+    weight = 8
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/hendelsantos"
+    weight = 9
+    [menu.main.params]
+      type = "link"
+      icon = "github"
+  [[menu.main]]
+    identifier = "search"
+    name = "Buscar"
+    weight = 10
+    [menu.main.params]
+      type = "search"
+
+[params]
+  description = "Blog técnico sobre programação, vibe coding com IA, análise de dados e aprendizado. Compartilhando stacks, anotações e experiência para reforçar a marca HendelCode."
+
+  # Banner de destaque (opcional - remova para desativar)
+  # [params.banner]
+  #   key = "lancamento"
+  #   message = "Bem-vindo ao **HendelCode**! 🎉"
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    [params.navbar.logo]
+      path = "images/logo.svg"
+      dark = "images/logo-dark.svg"
+    width = "wide"
+
+  [params.theme]
+    # light | dark | system
+    default = "system"
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+    width = "normal"
+
+  displayUpdatedDate = true
+  dateFormat = "2 de January de 2006"
+  displayUpdatedAuthor = false
+
+  # Busca (flexsearch embutido)
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "content"
+      tokenize = "forward"
+
+  [params.editURL]
+    enable = true
+    base = "https://github.com/hendelsantos/blog_hendelcode_Hugo/edit/main/content"
+
+  [params.blog]
+    [params.blog.list]
+      displayTags = true
+      sortBy = "date"
+      sortOrder = "desc"
+      pagerSize = 20
+    [params.blog.article]
+      displayPagination = true
+      displayTags = true
+
+  [params.archives]
+    section = "blog"
+    dateFormat = "02 Jan"
+
+  [params.toc]
+    displayTags = true
+
+  [params.highlight]
+    [params.highlight.copy]
+      enable = true
+      display = "hover"
+
+  [params.page]
+    width = "normal"
+    [params.page.contextMenu]
+      enable = true
+      [[params.page.contextMenu.links]]
+        name = "Abrir no ChatGPT"
+        icon = "chatgpt"
+        url = "https://chatgpt.com/?hints=search&q=Estou+lendo+este+artigo%3A+{url}%0AMe+ajude+a+entender+melhor."
+      [[params.page.contextMenu.links]]
+        name = "Abrir no Claude"
+        icon = "claude"
+        url = "https://claude.ai/new?q=Estou+lendo+este+artigo%3A+{url}%0AMe+ajude+a+entender+melhor."
+
+  [params.imageZoom]
+    enable = true
+
+  # Social / marca
+  [params.social]
+    github = "hendelsantos"
+
+# Configurações do GitHub Pages (necessário para resolve de assets com subpath)
+[params.images]
+  # mantém compatibilidade
