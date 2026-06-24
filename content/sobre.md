@@ -45,6 +45,11 @@ A inspiração vem de blogs como o [AkitaOnRails](https://akitaonrails.com/) —
 
 O código fonte é aberto em [github.com/hendelsantos/blog_hendelcode_Hugo](https://github.com/hendelsantos/blog_hendelcode_Hugo). Encontrou erro ou quer sugerir algo? Abre issue.
 
+## Onde me encontrar
+
+- **GitHub**: [hendelsantos](https://github.com/hendelsantos)
+- **LinkedIn**: [hendel-d](https://www.linkedin.com/in/hendel-d-754078115/)
+
 ---
 
 O próximo post já está saindo. Acompanhe pelo [RSS](/blog_hendelcode_Hugo/index.xml) ou pela página [Blog](/blog_hendelcode_Hugo/blog).

@@ -89,9 +89,17 @@ relativeURLs = false
       type = "link"
       icon = "github"
   [[menu.main]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/hendel-d-754078115/"
+    weight = 6
+    [menu.main.params]
+      type = "link"
+      icon = "linkedin"
+  [[menu.main]]
     identifier = "search"
     name = "Buscar"
-    weight = 6
+    weight = 7
     [menu.main.params]
       type = "search"
 
@@ -179,6 +187,7 @@ relativeURLs = false
   # Social / marca
   [params.social]
     github = "hendelsantos"
+    linkedin = "hendel-d-754078115"
 
 # Configurações do GitHub Pages (necessário para resolve de assets com subpath)
 [params.images]
