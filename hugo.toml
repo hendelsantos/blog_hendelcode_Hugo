@@ -94,7 +94,6 @@ relativeURLs = false
     url = "https://www.linkedin.com/in/hendel-d-754078115/"
     weight = 6
     [menu.main.params]
-      type = "link"
       icon = "linkedin"
   [[menu.main]]
     identifier = "search"
